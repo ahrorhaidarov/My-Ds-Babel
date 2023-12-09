@@ -118,3 +118,8 @@ After cloning and installing required libraries you have to write peace of code 
   csv_content = open("csv_file_name.csv")
   csv_to_sql(csv_context, 'database_name.db', 'table_name')
 ```
+
+After put this command in your terminal
+```bash
+  python my_ds_babel.py
+```
