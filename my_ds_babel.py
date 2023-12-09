@@ -18,9 +18,6 @@ def csv_to_sql(csv_context, database, table_name):
     df = pd.read_csv(csv_context)
     return df.to_sql(name=table_name, con=con, index=False)
 
-print(sql_to_csv('all_fault_line.db', 'fault_lines'))
-csv_content = open("list_volcano.csv")
-print((csv_to_sql(csv_content, 'list_volcanos.db', 'volcanos')))
 
 
 
